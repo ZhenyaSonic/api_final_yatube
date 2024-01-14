@@ -1,6 +1,5 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, filters, permissions, pagination
-from rest_framework.permissions import IsAuthenticated
 
 from posts.models import Group, Post, Comment
 from .permissions import IsAuthorOrReadOnly
